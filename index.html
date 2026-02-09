@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Haba Portfolio</title>
+ <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            'cyber-bg': '#070B14',
+            'cyber-bg-lighter': '#0E162B',
+            'cyber-card-bg': 'rgba(15, 23, 42, 0.75)',
+            'cyber-border': 'rgba(255, 255, 255, 0.06)',
+            'cyber-primary': '#2EA0FF',
+            'cyber-accent': '#00D3A7',
+            'cyber-danger': '#FF3B3B',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          borderRadius: {
+            'card': '1rem',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #070B14;
+      background-image: linear-gradient(to bottom, #070B14 0%, #0B1224 50%, #0E162B 100%);
+      background-attachment: fixed;
+      color: #f8fafc;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #2EA0FF 0%, #00D3A7 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-glow {
+      background: radial-gradient(circle at center, rgba(30, 79, 216, 0.25) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .cyber-card {
+      background: rgba(15, 23, 42, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    }
+    .glow-primary {
+      box-shadow: 0 0 20px rgba(46, 160, 255, 0.3);
+    }
+    @keyframes loading-progress {
+      0% { width: 0%; }
+      100% { width: 100%; }
+    }
+    .animate-progress {
+      animation: loading-progress 2s infinite linear;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "i18next-browser-languagedetector": "https://esm.sh/i18next-browser-languagedetector@^8.2.0",
+    "react-i18next": "https://esm.sh/react-i18next@^16.5.4",
+    "i18next": "https://esm.sh/i18next@^25.8.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
