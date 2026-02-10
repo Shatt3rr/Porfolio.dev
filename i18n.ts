@@ -119,7 +119,7 @@ const resources = {
       contact: {
         title: "Initiate Contact",
         subtitle: "This interface demonstrates secure communication concepts.",
-        protocol: "SECURE_TRANSMISSION_PROTOCOL_V4",
+        protocol: "SECURE_TRANSMISSION",
         form: {
           name_label: "Identifier (Name)",
           email_label: "Digital_Addr (Email)",
@@ -362,7 +362,7 @@ const resources = {
       contact: {
         title: "Iniciar Contacto",
         subtitle: "Esta interfaz demuestra conceptos de comunicación segura.",
-        protocol: "PROTOCOLO_DE_TRANSMISION_SEGURO_V4",
+        protocol: "TRANSMISION_SEGURA",
         form: {
           name_label: "Identificador (Nombre)",
           email_label: "Dir_Digital (Email)",
